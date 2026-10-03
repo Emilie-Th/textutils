@@ -47,3 +47,19 @@ def _extract_words(text, case_sensitive, ignored, min_length):
         word = _normalize(raw_word, case_sensitive)
         if word and len(word) >= min_length and word not in ignored:
             yield word
+
+
+def _count_words(words):
+    """
+    Count occurrences, keeping the order of first appearance.
+
+    Args:
+        words (Iterable[str]): The words to count.
+
+    Returns:
+        dict[str, int]: The number of occurrences of each word.
+    """
+    counts = {}
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+    return counts
