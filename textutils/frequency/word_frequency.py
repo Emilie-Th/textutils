@@ -63,3 +63,16 @@ def _count_words(words):
     for word in words:
         counts[word] = counts.get(word, 0) + 1
     return counts
+
+
+def _sort_by_frequency(counts):
+    """
+    Sort counts by decreasing frequency (ties keep first appearance).
+
+    Args:
+        counts (dict[str, int]): The number of occurrences of each word.
+
+    Returns:
+        list[tuple[str, int]]: The (word, count) pairs, most frequent first.
+    """
+    return sorted(counts.items(), key=lambda item: -item[1])
