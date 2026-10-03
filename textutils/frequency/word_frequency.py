@@ -14,3 +14,17 @@ def _normalize(word, case_sensitive):
     """
     word = word.strip(string.punctuation)
     return word if case_sensitive else word.lower()
+
+
+def _normalize_ignored(ignore_words, case_sensitive):
+    """
+    Build the set of words to ignore, following the case option.
+
+    Args:
+        ignore_words (list[str] | None): Words to exclude, or None for no exclusion.
+        case_sensitive (bool): If False, ignored words are lowercased.
+
+    Returns:
+        set[str]: The normalized words to ignore.
+    """
+    return {_normalize(word, case_sensitive) for word in (ignore_words or [])}
