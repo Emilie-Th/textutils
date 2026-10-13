@@ -10,7 +10,7 @@ def capitalize_words(text):
     """
     result=""
     for i in range(len(text)):
-        if i == 0 or text[i - 1] == " ":
+        if i == 0 or text[i - 1].isspace():
             result += text[i].upper()
         else:
             result += text[i]
