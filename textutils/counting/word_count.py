@@ -7,7 +7,6 @@ def word_count(text):
 
      Returns:
      int: The number of words in the text.
-     """
+    """
     words = text.split()
     return len(words)
-    

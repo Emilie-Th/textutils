@@ -4,7 +4,7 @@ def snake_case(text):
 
     Args:
     text (str): The text to convert to snake case.
-    
+
     Returns:
     str: The text converted to snake case.
     """

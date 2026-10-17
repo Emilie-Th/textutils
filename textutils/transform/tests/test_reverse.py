@@ -16,6 +16,7 @@ def test_reverse_single_character():
 def test_reverse_with_spaces():
     assert reverse("hello world") == "dlrow olleh"
 
+
 def test_reverse_unicode():
     assert reverse("été") == "été"
 

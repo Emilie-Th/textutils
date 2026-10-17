@@ -78,7 +78,9 @@ def _sort_by_frequency(counts):
     return sorted(counts.items(), key=lambda item: -item[1])
 
 
-def word_frequency(text, case_sensitive=False, ignore_words=None, min_length=1, top_n=None):
+def word_frequency(
+    text, case_sensitive=False, ignore_words=None, min_length=1, top_n=None
+):
     """
     Count how often each word appears in a text.
 

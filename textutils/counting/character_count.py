@@ -14,6 +14,6 @@ def character_count(text, include_spaces=True):
         for i in range(len(text)):
             if text[i] != " ":
                 nb += 1
-        return nb 
+        return nb
     else:
         return len(text)

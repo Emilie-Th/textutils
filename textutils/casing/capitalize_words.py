@@ -8,7 +8,7 @@ def capitalize_words(text):
     Returns:
     str: The text with each word capitalized.
     """
-    result=""
+    result = ""
     for i in range(len(text)):
         if i == 0 or text[i - 1].isspace():
             result += text[i].upper()
