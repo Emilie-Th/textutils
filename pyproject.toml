@@ -1,3 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textutils"
+version = "0.1.0"
+description = "A Python library providing utilities for text manipulation and analysis."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9,<10",
+    "pytest-cov>=7,<8",
+    "black>=25,<26",
+    "ruff>=0.17,<0.18",
+]
+
 [tool.black]
 line-length = 88
 target-version = ["py312"]
