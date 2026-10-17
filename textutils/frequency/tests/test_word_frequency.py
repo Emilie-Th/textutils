@@ -1,6 +1,6 @@
 import pytest
 
-from textutils.frequency.word_frequency import word_frequency
+from textutils.frequency._word_frequency import word_frequency
 
 
 def test_word_frequency_normal():

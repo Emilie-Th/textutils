@@ -1,4 +1,4 @@
-from textutils.casing.snake_case import snake_case
+from textutils.casing._snake_case import snake_case
 
 
 def test_snake_case_normal():

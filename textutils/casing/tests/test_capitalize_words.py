@@ -1,4 +1,4 @@
-from textutils.casing.capitalize_words import capitalize_words
+from textutils.casing._capitalize_words import capitalize_words
 
 
 def test_capitalize_words_normal():

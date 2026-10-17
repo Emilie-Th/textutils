@@ -1,4 +1,4 @@
-from textutils.counting.character_count import character_count
+from textutils.counting._character_count import character_count
 
 
 def test_character_count():

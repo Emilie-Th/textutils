@@ -1,4 +1,4 @@
-from textutils.counting.word_count import word_count
+from textutils.counting._word_count import word_count
 
 
 def test_word_count_normal():

@@ -1,4 +1,4 @@
-from textutils.transform.reverse import reverse
+from textutils.transform._reverse import reverse
 
 
 def test_reverse_normal():

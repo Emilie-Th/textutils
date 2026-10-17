@@ -1,5 +1,5 @@
 """Utilities for text transformations."""
 
-from .reverse import reverse
+from ._reverse import reverse
 
 __all__ = ["reverse"]
