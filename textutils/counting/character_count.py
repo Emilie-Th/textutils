@@ -2,12 +2,17 @@ def character_count(text, include_spaces=True):
     """
     Count the number of characters in a text.
 
-    Args:
-    text (str): The text in which to count the characters.
-    include_spaces (bool): Whether to include spaces in the count. Defaults to True.
+    Parameters
+    ----------
+    text : str
+        The text in which to count the characters.
+    include_spaces : bool, optional
+        Whether to include spaces in the count. Defaults to True.
 
-    Returns:
-    int: The number of characters in the text.
+    Returns
+    -------
+    int
+        The number of characters in the text.
     """
     if not include_spaces:
         nb = 0
