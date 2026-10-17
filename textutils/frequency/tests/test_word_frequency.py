@@ -1,6 +1,7 @@
 from textutils.frequency.word_frequency import word_frequency
 import pytest
 
+
 def test_word_frequency_normal():
     assert word_frequency("hello world hello") == {
         "hello": 2,
@@ -8,13 +9,13 @@ def test_word_frequency_normal():
     }
 
 def test_word_frequency_empty():
-    assert word_frequency("")=={}
+    assert word_frequency("") == {}
 
 def test_word_frequency_whitespace():
-    assert word_frequency("     ")=={}
+    assert word_frequency("     ") == {}
 
 def test_word_frequency_single_word():
-    assert word_frequency("hello")=={
+    assert word_frequency("hello") == {
         "hello": 1,
     }  
 
@@ -79,3 +80,6 @@ def test_word_frequency_ignore_words_case():
         "Hello hello world",
         ignore_words=["HELLO"],
     ) == {"world": 1}
+
+def test_word_frequency_only_punctuation():
+    assert word_frequency("!!! ??? ...") == {}
