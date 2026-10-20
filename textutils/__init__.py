@@ -1,3 +1,4 @@
+from .casing import camel_case
 from .casing._capitalize_words import capitalize_words
 from .casing._snake_case import snake_case
 from .counting._character_count import character_count
@@ -6,6 +7,7 @@ from .frequency._word_frequency import word_frequency
 from .transform._reverse import reverse
 
 __all__ = [
+    "camel_case",
     "capitalize_words",
     "character_count",
     "reverse",
