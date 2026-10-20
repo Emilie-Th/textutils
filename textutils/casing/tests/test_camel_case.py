@@ -2,7 +2,7 @@ from textutils.casing._camel_case import camel_case
 
 
 def test_camel_case_normal():
-    assert camel_case("hello world") == "hello_World"
+    assert camel_case("hello world") == "helloWorld"
 
 
 def test_camel_case_upper():
