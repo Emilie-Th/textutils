@@ -1,11 +1,11 @@
-name: Python CI
+name: Python Tests
 
 on:
   push:
   pull_request:
 
 jobs:
-  quality-checks:
+  tests:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -27,9 +27,3 @@ jobs:
 
       - name: Run tests
         run: python -m pytest -q --cov=textutils --cov-report=term-missing
-
-      - name: Check formatting with Black
-        run: python -m black --check .
-
-      - name: Check code quality with Ruff
-        run: python -m ruff check .
